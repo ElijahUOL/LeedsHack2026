@@ -1,0 +1,29 @@
+.body{
+    position: relative;
+    text-align: center;
+}
+
+.title{
+    position: absolute;
+    border-style: dashed;
+    top: 0em;
+    
+}
+
+.paragraph1{
+    position: absolute;
+    border-style: dashed;
+}
+.paragraph2{
+    position: absolute;
+    border-style: dashed;
+}
+
+.menu{
+    position: absolute;
+    border-style: dashed;
+}
+
+#links{
+    display: none;
+}
