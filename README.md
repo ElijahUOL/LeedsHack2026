@@ -15,3 +15,7 @@
 
 Page layout:
 Login/Register -> Home -> Account Details -> Join Lecture -> Avatar Shop
+
+
+To use: Click the green 'code' button then 'download zip' and then navigate to the 'prototype' folder and open 'main.html' to run the web application'.
+Lectures can be attended (using codes 123456, 654321) and items can be purchased. Returning to the home page will reset the app.
