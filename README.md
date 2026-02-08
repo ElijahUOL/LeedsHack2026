@@ -14,4 +14,4 @@
 
 
 Page layout:
-Home -> Login/Register -> Profile -> Log lecture -> Points store
+Login/Register -> Home -> Account Details -> Join Lecture -> Avatar Shop
