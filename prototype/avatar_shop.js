@@ -5,7 +5,8 @@ let items = ["hat", "glasses", "shirt", "bottoms", "shoes"];
 window.onload = function(){
     document.getElementById("points").textContent = `Points: ${points}`;
     for (item in items) {
-        if (purchased_items.includes(items[item].toLowerCase())) {
+        item_name = items[item].charAt(0).toUpperCase() + items[item].slice(1);
+        if (purchased_items.includes(item_name)) {
             console.log(items[item]);
             document.getElementById(items[item]).disabled = true;
             document.getElementById(items[item]).textContent = "Purchased";
