@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Title: Sign Up</title>
-<link rel="stylesheet" href="style.css">
-<script src="register.js"></script> 
+    <title>Title: Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="register.js"></script> 
 </head>
 <body>
-
-<h1>Sign Up</h1>
-<div class="container"></div>
-<form action="register.php" method="post">
-    <label for="email">Email:</label><br>
-    <input type="text" id="email" name="email" ><br>
-    <label for="password">Password:</label><br>
-    <input type="text" id="password" name="password" oninput="checkPasswordsMatch()">
-    <label for="confirmPassword">Confirm Password:</label><br>
-    <input type="text" id="confirmPassword" name="confirmPassword" oninput="checkPasswordsMatch()">
-    <label for="confirmPassword" id="PasswordMatchErrorMessage"></label><br>
-    <input type="submit" id="Register" value="Login">
-</form>
-<a href="login.html"> Log in instead </a>
-</div>
+    <div class="title">
+        <h1>Sign Up</h1>
+    </div>
+    <div class="container">
+        <form action="register.php" method="post">
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email" ><br>
+            <label for="password">Password:</label><br>
+            <input type="text" id="password" name="password" oninput="checkPasswordsMatch()">
+            <label for="confirmPassword">Confirm Password:</label><br>
+            <input type="text" id="confirmPassword" name="confirmPassword" oninput="checkPasswordsMatch()">
+            <label for="confirmPassword" id="PasswordMatchErrorMessage"></label><br>
+            <input type="submit" id="Register" value="Login">
+        </form>
+        <div>
+            <a href="login.html"> Log in instead </a>
+        </div>
+    </div>
 
 </body>
 </html> 
