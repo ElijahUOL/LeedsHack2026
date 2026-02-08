@@ -10,6 +10,7 @@ $dbname = "logindb";
 $conn = new mysqli($host, $dbusername, $dbpassword, $dbname);
 
 if ($conn->connect_error) {
+    echo "Database is not webhosted in prototype, if a localhost is setup this does work";
     die("Connect Error (". $conn->connect_errno .") ".$conn->connect_error);
 } 
 else 
@@ -49,3 +50,4 @@ else
     <a href="login.html">Click here to return to login page</a>
 </body>
 </html>
+
