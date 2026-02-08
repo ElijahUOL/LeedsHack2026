@@ -1,12 +1,13 @@
 let lectureCode;
 let validLectureCodes = ["123456", "654321", "abcdef", "fedcba"];
+localStorage.getItem("LectureCodesUsed");
 
 
 // Manages the value within the input box when the submit button is pressed.
 document.getElementById("mySubmit").onclick = function() {
     // Stores the value of the entered lecture code to the variable lectureCode
     lectureCode = document.getElementById("lcode").value;
-    
+    console.log(lectureCode);
     //Checks if the enterrred lecture code is valid
     if (validLectureCodes.includes(lectureCode)) {
         //Checks to ensure the lecture code has not been used before

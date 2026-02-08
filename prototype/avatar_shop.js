@@ -1,11 +1,15 @@
 let points = localStorage.getItem("points");
-let purchased_items = localStorage.getItem("purchased_items")
+let purchased_items = localStorage.getItem("PurchasedItems");
+let items = ["hat", "glasses", "shirt", "bottoms", "shoes"];
 
 window.onload = function(){
     document.getElementById("points").textContent = `Points: ${points}`;
-    for (item in purchased_items) {
-        this.document.getElementById(item).disabled = true;
-        this.document.getElementById(item).textContent = "Purchased";
+    for (item in items) {
+        if (purchased_items.includes(items[item].toLowerCase())) {
+            console.log(items[item]);
+            document.getElementById(items[item]).disabled = true;
+            document.getElementById(items[item]).textContent = "Purchased";
+        }
     }
 }
 
@@ -16,12 +20,13 @@ document.getElementById("hat").onclick = function() {
         document.getElementById("hat").disabled = true;
         document.getElementById("hat").textContent = "Purchased";
         alert("Hat purchased!");
-        localStorage.setItem("purchased_items", localStorage.getItem("purchased_items").push("hat"));
+        localStorage.setItem("PurchasedItems", localStorage.getItem("PurchasedItems") + "Hat, ");
         document.getElementById("points").textContent = `Points: ${points}`;
     } else {
         alert("Not enough points!");
     }
 }
+
 document.getElementById("glasses").onclick = function() {
     if (points >= 50) {
         points -= 50;
@@ -29,7 +34,7 @@ document.getElementById("glasses").onclick = function() {
         document.getElementById("glasses").disabled = true;
         document.getElementById("glasses").textContent = "Purchased";
         alert("Glasses purchased!");
-        localStorage.setItem("purchased_items", localStorage.getItem("purchased_items") + ",glasses");
+        localStorage.setItem("PurchasedItems", localStorage.getItem("PurchasedItems") + "Glasses, ");
         document.getElementById("points").textContent = `Points: ${points}`;
     }
     else {
@@ -45,7 +50,7 @@ document.getElementById("shirt").onclick = function() {
         document.getElementById("shirt").disabled = true;
         document.getElementById("shirt").textContent = "Purchased";
         alert("Shirt purchased!");
-        localStorage.setItem("purchased_items", localStorage.getItem("purchased_items") + ",shirt");
+        localStorage.setItem("PurchasedItems", localStorage.getItem("PurchasedItems") + "Shirt, ");
         document.getElementById("points").textContent = `Points: ${points}`;
     } else {
         alert("Not enough points!");
@@ -59,7 +64,7 @@ document.getElementById("bottoms").onclick = function() {
         document.getElementById("bottoms").disabled = true;
         document.getElementById("bottoms").textContent = "Purchased";
         alert("Bottoms purchased!");
-        localStorage.setItem("purchased_items", localStorage.getItem("purchased_items") + ",bottoms");
+        localStorage.setItem("PurchasedItems", localStorage.getItem("PurchasedItems") + "Bottoms, ");
         document.getElementById("points").textContent = `Points: ${points}`;
     } else {
         alert("Not enough points!");
@@ -73,7 +78,7 @@ document.getElementById("shoes").onclick = function() {
         document.getElementById("shoes").disabled = true;
         document.getElementById("shoes").textContent = "Purchased";
         alert("Shoes purchased!");
-        localStorage.setItem("purchased_items", localStorage.getItem("purchased_items") + ",shoes");
+        localStorage.setItem("PurchasedItems", localStorage.getItem("PurchasedItems") + "Shoes, ");
         document.getElementById("points").textContent = `Points: ${points}`;
     } else {
         alert("Not enough points!");
