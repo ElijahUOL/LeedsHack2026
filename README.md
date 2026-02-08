@@ -1,7 +1,7 @@
 # LeedsHack2026
 
-## Chosen Challenges - School of Computer Science: 
-##### Attendance System Rebooted
+### Chosen Challenges: 
+##### School of Computer Science - Attendance System Rebooted
 ##### Genio Sponsor Challenge - Learning Rebooted
 
 ### Key Features:
