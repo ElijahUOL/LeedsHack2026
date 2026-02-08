@@ -1,5 +1,5 @@
 let lectureCode;
-let validLectureCodes = ["123456", "654321", "abcdef", "fedcba"];
+let validLectureCodes = ["123456", "654321", "abcdef", "fedcba", "111111", "222222", "333333", "444444", "555555", "666666"];
 localStorage.getItem("LectureCodesUsed");
 
 
