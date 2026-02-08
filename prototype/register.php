@@ -43,3 +43,9 @@ else
     $conn->close();
 }
 ?>
+
+<html>
+<body>
+    <a href="login.html">Click here to return to login page</a>
+</body>
+</html>
