@@ -31,3 +31,9 @@ else
     $conn->close();
 }
 ?>
+
+<html>
+<body>
+<a href="main.html">Click Here to return to Main page</a>
+</body>
+</html>
